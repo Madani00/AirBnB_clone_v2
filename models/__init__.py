@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This module instantiates an object of class FileStorage"""
+
 from models.state import State
 from models.city import City
 from models.user import User
