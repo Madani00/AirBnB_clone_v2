@@ -20,7 +20,7 @@ def hbnb():
 @app.route('/c/<changeble_text>')
 def c_is_c(changeble_text):
     text = changeble_text.replace("_", " ")
-    return "C " + text 
+    return "C " + text
 
 
 if __name__ == '__main__':
