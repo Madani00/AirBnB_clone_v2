@@ -23,7 +23,8 @@ def c_is_c(changeble_text):
     return "C " + text
 
 
-@app.route('/python/<changeble_text>', defaults={'changeble_text': 'is cool'})
+@app.route("/python/", defaults={'changeble_text': 'is cool'})
+@app.route('/python/<changeble_text>')
 def py(changeble_text):
     text = changeble_text.replace("_", " ")
     return "Python " + text
